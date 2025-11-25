@@ -1,0 +1,25 @@
+.navigation_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.navigation_list_item {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--main);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation_list_item:hover {
+    color: var(--button-hover);
+}
+
+.active {
+    color: var(--button-hover);
+}

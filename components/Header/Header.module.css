@@ -1,0 +1,14 @@
+.header {
+    background-color: var(--badges);
+}
+
+.header_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 960px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+

@@ -1,15 +1,15 @@
 .background {
-  background-image: image-set(
-    url('/main/main-desk.webp') 1x,
-    url('/main/main-desk@2x.webp') 2x
-  );
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  padding-top: 440px;
-  padding-bottom: 60px;
+    background-image: url('/main/main-desk.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    padding-top: 440px;
+    padding-bottom: 60px;
 }
+
+
+
 
 
 .home_title {

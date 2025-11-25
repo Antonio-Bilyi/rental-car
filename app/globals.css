@@ -13,7 +13,7 @@
 html,
 body {
   max-width: 100vw;
-  min-height: 10hv;
+  min-height: 100hv;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }

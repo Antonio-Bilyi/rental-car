@@ -1,11 +1,16 @@
-import { getCars } from "../../lib/serverApi/getCars";
+import { getCars } from "../../lib/api";
+import CatalogItemList from "../../components/CatalogItemList/CatalogItemList";
 
+const Catalog = async () => {
+    const response = await getCars();
+    
 
-const Cars = async () => {
-    const cars = await getCars();
-    console.log('cars', cars);
-
-    return <div>Here must be catalog of cars</div>
+    return (
+        <section>
+            <h1>Here your cars</h1>
+            {response?.cars.length > 0 && <CatalogItemList cars={response.cars} />}
+        </section>
+    );
 };
 
-export default Cars;
+export default Catalog;

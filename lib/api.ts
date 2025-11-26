@@ -1,5 +1,10 @@
 import axios from "axios";
+import { CarListResponse } from "../types/cars/carListResponse";
 
-export const nextServer = axios.create({
-    baseURL: `${process.env.NEXT_PUBLIC_API_URL}/api`,
-});
+axios.defaults.baseURL = `${process.env.API_URL}`;
+
+export const getCars = async () => {
+    const res = await axios.get<CarListResponse>('/cars');
+
+    return res.data;
+};

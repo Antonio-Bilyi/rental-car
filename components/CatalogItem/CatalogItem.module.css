@@ -1,6 +1,8 @@
 .catalog_card {
     width: 276px;
     min-height: 424px;
+
+    position: relative;
 }
 
 .card_content {
@@ -13,6 +15,13 @@
     margin-bottom: 16px;
 
     object-fit: cover;
+}
+
+.card_icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    fill: var(--badges);
 }
 
 .content_info {

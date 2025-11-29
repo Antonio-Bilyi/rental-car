@@ -29,6 +29,10 @@ const CatalogItem = ({ car }: CatalogItemProps) => {
                     className={css.card_image}> 
                 </Image>
 
+               <svg className={css.card_icon} width="16" height="16">
+                    <use href="/svg-spite.svg#icon-not-like"></use>
+                </svg>
+
                 <div className={css.content_info}>
                     <p className={css.car_name}>{car.brand} <span className={css.name_span}>{car.model}</span>, {car.year}</p>
                     <p className={css.car_price}>${car.rentalPrice}</p>

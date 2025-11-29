@@ -47,7 +47,7 @@ const CatalogItem = ({ car }: CatalogItemProps) => {
 
             </div>
 
-            <Link href='/' className={css.card_button}>Read more</Link>
+            <Link href={`/catalog/${car.id}`} className={css.card_button}>Read more</Link>
         </li>
     );
 };

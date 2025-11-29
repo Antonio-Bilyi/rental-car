@@ -7,7 +7,6 @@ const Catalog = async () => {
 
     return (
         <section>
-            <h1>Here your cars</h1>
             {response?.cars.length > 0 && <CatalogItemList cars={response.cars} />}
         </section>
     );

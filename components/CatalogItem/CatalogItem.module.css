@@ -1,0 +1,129 @@
+.catalog_card {
+    width: 276px;
+    min-height: 424px;
+}
+
+.card_content {
+    margin-bottom: 28px;
+}
+
+.card_image {
+    border-radius: 14px;
+    background: linear-gradient(180deg, rgba(18, 20, 23, 0.5) 0%, rgba(18, 20, 23, 0.5) 100%);
+    margin-bottom: 16px;
+
+    object-fit: cover;
+}
+
+.content_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 8px;
+}
+
+.car_name {
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.25;
+color: var(--main);
+}
+
+.name_span {
+color: var(--button);
+}
+
+.car_price {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--main);
+}
+
+.content_address {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+
+
+    margin-bottom: 4px;
+}
+
+.car_city,
+.car_country,
+.car_company {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 1.33333;
+color: var(--gray);
+
+position: relative;
+}
+
+.car_city::after, 
+.car_country::after, 
+.car_company::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background-color: var(--gray-light);
+    margin: 0 6px;
+
+    position: absolute;
+}
+
+.content_type {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.car_type,
+.car_mileage {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 12px;
+line-height: 1.33333;
+color: var(--gray);
+
+position: relative;
+}
+
+.car_type::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    background-color: var(--gray-light);
+    margin: 0 6px;
+        
+    position: absolute;
+}
+
+.card_button {
+    border-radius: 12px;
+    padding: 12px 97px;
+    background: var(--button);
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--white);
+
+    display: block;
+    width: fit-content;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card_button:hover {
+    background-color: var(--button-hover);
+}
